@@ -36,11 +36,9 @@ There are 3 files which you need to go through, to understand this repository:
 > - Install node packages [referring package.json] (`npm install`)
 
 3. **git-hook/post-merge**
-> - It include *post-merge* file, which gets called, whenever contributor successfully, takes a pull (without conflicts).
-<br>
+> - It include *post-merge* file, which gets called, whenever contributor successfully, takes a pull (without conflicts). <br>
 > - When the pull is executed, it checks all changed file, if there **.env.example** file. <br>
-> - If there's, then it will check if the migration flag has a `true` value assigned to it.
-<br>
+> - If there's, then it will check if the migration flag has a `true` value assigned to it. <br>
 > - Based on the flag, it will perform DB (database) changes.
 
 ***
